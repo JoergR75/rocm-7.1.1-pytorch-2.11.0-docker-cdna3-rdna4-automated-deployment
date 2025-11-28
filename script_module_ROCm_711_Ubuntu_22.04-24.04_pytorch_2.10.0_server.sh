@@ -1,6 +1,6 @@
 #!/bin/bash
 # ================================================================================================================
-# ROCm 7.1.1 + OpenCL 2.x + PyTorch 2.10.0 (nightly for ROCm7) + Transformers + Docker Setup
+# ROCm 7.1.1 + OpenCL 2.x + PyTorch 2.10.0 (nightly for ROCm7.1) + Transformers + Docker Setup
 # Compatible with Ubuntu 22.04.x and 24.04.x (Desktop & Server) — Ubuntu 20.04.x is no longer supported
 # ================================================================================================================
 # Description:
@@ -28,8 +28,8 @@
 # ROCm Release Notes:    https://rocm.docs.amd.com/en/docs-7.1.1/about/release-notes.html
 # ROCm Driver Repo:      https://repo.radeon.com/amdgpu-install/7.1.1/ubuntu/
 #
-# PyTorch:               2.10.0.dev20251027+rocm7.0
-# Transformers:          4.57.1
+# PyTorch:               2.10.0.dev20251123+rocm7.0
+# Transformers:          4.57.3
 # Docker:                min. 28.5.0 (the script will verify and skip installation if minimum requirements are installed)
 #
 # INCLUDED TOOLS:
