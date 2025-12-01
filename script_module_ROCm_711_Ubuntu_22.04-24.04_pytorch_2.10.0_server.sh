@@ -20,7 +20,7 @@
 #   - Ubuntu 24.04.3: 6.8.0-88
 #
 # Supported Hardware:
-#   - AMD CDNA2 | CDNA3 | RDNA3 | RDNA4 GPU Architectures
+#   - AMD CDNA2 | CDNA3 | RDNA3 | RDNA4 GPU Architectures | Strix APU
 #
 # SOFTWARE VERSIONS:
 # ---------------------------------------------------------------------------------------------------------------
