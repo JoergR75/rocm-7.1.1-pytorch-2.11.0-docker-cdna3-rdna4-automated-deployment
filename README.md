@@ -202,7 +202,6 @@ Using the `--run tb p2p` flag runs **Peer-to-peer device memory bandwidth test**
 Run the P2P test
 ```bash
 sudo /opt/rocm/bin/rocm_bandwidth_test plugin --run tb p2p
-
 ```
 
 ### Output
@@ -216,6 +215,13 @@ Make sure **"Resize BAR"** is enabled in the **SBIOS**.
 If it is disabled, **P2P** will be deactivated, as shown below:
 
 <img width="977" height="777" alt="{FD9B95A3-BEFA-4857-8BBB-8D06A90108F2}" src="https://github.com/user-attachments/assets/cc148322-45b3-4164-b215-521276749f9d" />
+
+More details about the setup can be verified by
+```bash
+sudo /opt/rocm/bin/rocm_bandwidth_test plugin --run tb
+```
+
+<img width="904" height="274" alt="{3F58A790-E952-4BD9-9F0A-B99FD8F0B081}" src="https://github.com/user-attachments/assets/28b1808a-8216-4d7c-b1ea-db599f140056" />
 
 ### ⚙️ How to Enable **Resize BAR** in SBIOS
 
