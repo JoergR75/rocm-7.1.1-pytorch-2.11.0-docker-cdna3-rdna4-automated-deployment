@@ -240,7 +240,7 @@ sudo /opt/rocm/bin/rocm_bandwidth_test plugin --run tb
 
 <img width="1018" height="761" alt="{135D3B4C-0732-4652-A3C0-1224D275A515}" src="https://github.com/user-attachments/assets/b1cdc3ce-b526-4cdc-b44f-71d1119cf6d7" />
 
-5. Go to **PCI Subsystem Settings**
+5. Go to **PCI Subsystem Settings** and change **Re-Size BAR Support** to **Enable** 
 
 <img width="1016" height="761" alt="{3C54C3DA-8B82-483C-AEA5-D0A511508780}" src="https://github.com/user-attachments/assets/60536e2b-e59f-4486-a1fc-ab3ff33a3cd8" />
 
