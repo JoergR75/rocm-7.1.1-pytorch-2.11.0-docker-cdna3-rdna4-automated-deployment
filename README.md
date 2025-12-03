@@ -180,7 +180,7 @@ GPU2 has been added to the container
 
 ## 📶 ROCm Bandwidth Test
 
-**AMD’s ROCm Bandwidth Test utility** with the **`-a` (all tests)** flag runs a complete set of bandwidth diagnostics.
+**AMD’s ROCm Bandwidth Test utility** with the **`tb p2p` (Peer-to-peer device memory bandwidth test)** flag runs a complete set of bandwidth diagnostics.
 
 ### What it does
 
@@ -192,7 +192,7 @@ GPU2 has been added to the container
 
 ### `-a` (all tests) option
 
-Using the `-a` flag runs **all available tests**, including:
+Using the `--run tb p2p` flag runs **Peer-to-peer device memory bandwidth test**, including:
 
 - **Host-to-Device (H2D)** bandwidth  
 - **Device-to-Host (D2H)** bandwidth  
