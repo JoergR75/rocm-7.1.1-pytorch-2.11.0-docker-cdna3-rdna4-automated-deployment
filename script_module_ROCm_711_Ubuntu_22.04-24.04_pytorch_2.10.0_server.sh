@@ -148,7 +148,7 @@ install_jellyfish() {
     python3 -m pip install --upgrade pip wheel --quiet --no-input
     python3 -m pip install joblib --quiet --no-input
     python3 -m pip install setuptools_scm --quiet --no-input
-    python3 -m pip install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/rocm7.0 --no-input
+    python3 -m pip install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/rocm7.1 --no-input
     python3 -m pip install transformers --quiet --no-input
     python3 -m pip install accelerate --quiet --no-input
     python3 -m pip install -U diffusers --quiet --no-input
@@ -235,7 +235,7 @@ install_noble() {
     pip3 install --upgrade pip wheel --break-system-packages
     pip3 install joblib --break-system-packages
     pip3 install setuptools_scm --break-system-packages
-    pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/rocm7.0 --no-input --break-system-packages
+    pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/rocm7.1 --no-input --break-system-packages
     pip3 install transformers --break-system-packages
     pip3 install accelerate --break-system-packages
     pip3 install -U diffusers --break-system-packages
