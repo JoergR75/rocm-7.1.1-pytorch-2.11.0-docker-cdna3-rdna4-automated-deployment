@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------------------------------------------
 # This Python script benchmarks the performance of large language models using vLLM on AMD ROCm-compatible GPUs.
-# It measures throughput, latency, and time-to-first-token (TTFT) for different concurrency levels when
+# It measures throughput, latency, and time-to-first-token (TTFT) for different batch sizes when
 # generating text from a given prompt
 # ---------------------------------------------------------------------------------------------------------------
 # Key features:
@@ -13,7 +13,7 @@
 #  - Supports Hugging Face authentication via a token
 # ---------------------------------------------------------------------------------------------------------------
 # Author:                Joerg Roskowetz
-# Estimated Runtime:     ~1-2 minutes (depending on model)
+# Estimated Runtime:     ~1-2 minutes (depending on model and batch size)
 # Last Updated:          January 21st, 2026
 # ================================================================================================================
 
