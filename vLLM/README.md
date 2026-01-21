@@ -18,7 +18,7 @@ sudo docker run -it \
 ```
 ### 2️⃣ **Download the python Benchmark-Script from the Repository**
 ```bash
-wget 
+wget https://raw.githubusercontent.com/JoergR75/rocm-7.1.1-pytorch-2.11.0-docker-cdna3-rdna4-automated-deployment/refs/heads/main/vLLM/vLLMbench.py
 ```
 
 
