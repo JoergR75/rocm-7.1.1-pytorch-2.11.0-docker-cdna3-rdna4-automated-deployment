@@ -1,6 +1,5 @@
 # ---------------------------------------------------------------------------------------------------------------
-# This Python script benchmarks the performance of large language models (LLMs) using vLLM on AMD ROCm-compatible
-# GPUs.
+# This Python script benchmarks the performance of large language models using vLLM on AMD ROCm-compatible GPUs.
 # It measures throughput, latency, and time-to-first-token (TTFT) for different concurrency levels when
 # generating text from a given prompt
 # ---------------------------------------------------------------------------------------------------------------
