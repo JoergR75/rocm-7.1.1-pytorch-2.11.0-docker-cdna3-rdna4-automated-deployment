@@ -3,17 +3,25 @@
 ### 1️⃣ **System preperation**
 Install **Ubuntu 22.04.5 LTS** or **Ubuntu 24.04.3 LTS** (Server or Desktop version).
 Install the the automates ROCm 
-Download and Install the latest vLLM container
+Download and Install the latest vLLM container (RDNA4 build for Ubuntu 24.04.x (~13.6GB))
 ```bash
-wget 
+sudo docker pull rocm/vllm-dev:rocm7.1.1_navi_ubuntu24.04_py3.12_pytorch_2.8_vllm_0.10.2rc1
 ```
-
+start the container
+```bash
+sudo docker run -it \
+    --device=/dev/kfd \
+    --device=/dev/dri \
+    --security-opt seccomp=unconfined \
+    --group-add video \
+    rocm/vllm-dev:rocm7.1.1_navi_ubuntu24.04_py3.12_pytorch_2.8_vllm_0.10.2rc1
+```
 ### 2️⃣ **Download the python Benchmark-Script from the Repository**
 ```bash
 wget 
 ```
 
-<img width="992" height="309" alt="{84098431-5992-4FDC-A29F-E3DFE334A8EE}" src="https://github.com/user-attachments/assets/08b6d99d-ea56-4c53-9f54-af49601a957a" />
+
 
 ### 3️⃣ **Run the Installer**
 ```bash
