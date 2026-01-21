@@ -21,7 +21,6 @@ sudo docker run -it \
 ```bash
 wget https://raw.githubusercontent.com/JoergR75/rocm-7.1.1-pytorch-2.11.0-docker-cdna3-rdna4-automated-deployment/refs/heads/main/vLLM/vLLMbench.py
 ```
-
 <img width="1216" height="276" alt="{DA9A9447-CA91-4CE5-8095-B545AA24E564}" src="https://github.com/user-attachments/assets/9f960a0a-4415-428f-b308-9534df12e867" />
 
 ### 3️⃣ **Run the Benchmark**
@@ -35,8 +34,5 @@ python3 vLLMbench.py \
   --hf-token hf_xxxx
 ```
 **⚠️ Note**: verify if a hf token to access the model will be required. Some models aslo require to accept license notice.
-
-<img width="873" height="294" alt="{29E92554-013D-4450-968F-036282CBA9C6}" src="https://github.com/user-attachments/assets/011e053b-c444-4f3d-b276-cabae5224f2d" />
-
-The installation takes ~15 minutes depending on internet speed and hardware performance.
+<img width="894" height="215" alt="{2E07A558-C14D-49E9-8B34-6BAC7FBB26B8}" src="https://github.com/user-attachments/assets/4d78ef93-22f3-4af8-a670-fdfaaec6bf01" />
 
