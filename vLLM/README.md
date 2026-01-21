@@ -27,6 +27,7 @@ Install tabulate
 ```bash
 pip3 install tabulate
 ```
+<img width="1012" height="132" alt="{DBE97894-2F06-4929-AC9F-1A04529BDFFF}" src="https://github.com/user-attachments/assets/209cc851-da38-4413-a512-b7d8edebaa03" />
 
 ### 3️⃣ **Run the Benchmark**
 Without a required hugging face token
