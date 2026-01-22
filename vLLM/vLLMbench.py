@@ -34,6 +34,8 @@ MODEL_NAME = "speakleash/Bielik-11B-v3-Base-20250730"
 # MODEL_NAME = "speakleash/Bielik-1.5B-v3"
 # MODEL_NAME = "speakleash/Bielik-4.5B-v3"
 
+MODEL_DTYPE="float16"
+
 PROMPT = "Explain the benefits of AMD ROCm for large language models."
 CONCURRENCY_LEVELS = [1, 2, 4, 8, 16, 32]
 GENERATE_TOKENS = 200
@@ -81,8 +83,8 @@ async def benchmark():
 
     engine_args = AsyncEngineArgs(
         model=MODEL_NAME,
-        dtype="float16",
-        max_model_len=4096,
+        dtype=MODEL_DTYPE,
+        max_model_len=PROMPT_TOKENS+GENERATE_TOKENS,
         gpu_memory_utilization=0.9,
     )
 
