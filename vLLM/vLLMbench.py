@@ -30,8 +30,8 @@ import torch
 # MODEL_NAME = "NousResearch/Llama-2-7b-hf"
 # MODEL_NAME = "NousResearch/DeepHermes-3-Llama-3-8B-Preview"
 # MODEL_NAME = "speakleash/Bielik-11B-v2"
-MODEL_NAME = "speakleash/Bielik-11B-v3-Base-20250730"
-# MODEL_NAME = "speakleash/Bielik-1.5B-v3"
+# MODEL_NAME = "speakleash/Bielik-11B-v3-Base-20250730"
+MODEL_NAME = "speakleash/Bielik-1.5B-v3"
 # MODEL_NAME = "speakleash/Bielik-4.5B-v3"
 
 PROMPT = "Explain the benefits of AMD ROCm for large language models."
