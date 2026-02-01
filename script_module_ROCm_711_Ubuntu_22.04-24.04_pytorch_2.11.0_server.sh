@@ -28,9 +28,9 @@
 # ROCm Release Notes:    https://rocm.docs.amd.com/en/docs-7.1.1/about/release-notes.html
 # ROCm Driver Repo:      https://repo.radeon.com/amdgpu-install/7.1.1/ubuntu/
 #
-# PyTorch:               2.11.0.dev20251221+rocm7.1
-# Transformers:          4.57.3
-# Docker:                min. 29.0.0 (the script will verify and skip installation if minimum requirements are installed)
+# PyTorch:               2.11.0.dev20260129+rocm7.1
+# Transformers:          5.0.0
+# Docker:                29.2.0 Min. 29.0.0 (the script will verify and skip installation if minimum requirements are installed)
 #
 # INCLUDED TOOLS:
 # ---------------------------------------------------------------------------------------------------------------
