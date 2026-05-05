@@ -6,11 +6,11 @@
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20%7C%2024.04-e95420?logo=ubuntu)](https://ubuntu.com)
 
 ## 📌 Overview
-The script provisions a fully automated, non-interactive AMD GPU software development environment for AI and HPC software engineering on **Ubuntu 22.04** and **24.04**, centered on **ROCm 7.1.1** and PyTorch nightly for **ROCm 7.1**.
+The script provisions a fully automated, non-interactive AMD GPU software development environment for AI and HPC software engineering on **Ubuntu 22.04** and **24.04**, centered on **ROCm 7.1.1** and PyTorch stable for **ROCm 7.1**.
 
 At the platform layer, it installs the AMD GPU kernel driver (**amdgpu-dkms**) and the ROCm 7.1.1 runtime, including **HIP** and **OpenCL 2.x**, ensuring compatibility across **CDNA2**, **CDNA3**, **RDNA3**, **RDNA4** GPUs and **Strix APUs**. The script configures **OpenCL ICD** paths, user group permissions (video, render, sudo), and kernel headers required for compiling GPU-accelerated native extensions.
 
-For the AI framework layer, the script installs **PyTorch 2.11.0 nightly** (**ROCm 7.1 wheels**) directly from the official PyTorch ROCm nightly repository, enabling access to the latest HIP backends, kernel fusion paths, and compiler features. It complements PyTorch with Transformers, Accelerate, Diffusers, Datasets, SentencePiece, and supporting Python build tooling, allowing immediate development, testing, and profiling of modern LLM, diffusion, and data-parallel workloads.
+For the AI framework layer, the script installs **PyTorch 2.11.0 stable** (**ROCm 7.1 wheels**) directly from the official PyTorch ROCm nightly repository, enabling access to the latest HIP backends, kernel fusion paths, and compiler features. It complements PyTorch with Transformers, Accelerate, Diffusers, Datasets, SentencePiece, and supporting Python build tooling, allowing immediate development, testing, and profiling of modern LLM, diffusion, and data-parallel workloads.
 
 The developer toolchain is rounded out with C/C++ build and system utilities required for low-level GPU software engineering and extension development, including **cmake**, **libstdc++ dev headers**, **git** / **git-lfs**, **libmsgpack**, and **rocm-bandwidth-test** for validating PCIe and HBM bandwidth. Runtime observability and system inspection are supported via htop, ncdu, and ROCm diagnostics (rocminfo, rocm-smi, amd-smi).
 
@@ -30,7 +30,7 @@ If an existing ROCm installation is detected, it removes ROCm and related packag
 | **GPUs**          | AMD **CDNA2** • **CDNA3** • **RDNA3** • **RDNA4** • **Strix APU**                 |
 | **APUs**        | AMD **Strix** • **Strix Halo**                                       |
 | **ROCm**          | 7.1.1                                                |
-| **PyTorch**       | torch 2.11.0.dev20251221+rocm7.1, torchvision 0.25.0.dev20251222+rocm7.1                            |                                               |
+| **PyTorch**       | 2.11.0+rocm7.1, 0.26.0+rocm7.1                            |                                               |
 
 **⚠️ Note**: **Ubuntu 20.04.x (Focal Fossa)** is **not supported**. The last compatible ROCm version for 20.04 is **6.4.0**.
 
@@ -38,7 +38,7 @@ If an existing ROCm installation is detected, it removes ROCm and related packag
 
 ## ⚡ Features
 - Automated **ROCm GPU drivers + HIP + OpenCL SDK** installation
-- **PyTorch ROCm nightly** with GPU acceleration
+- **PyTorch ROCm stable** with GPU acceleration
 - Preinstalled **Transformers**, **Accelerate**, **Diffusers**, and **Datasets**
 - Integrated **Docker environment** with ROCm GPU passthrough
 - **vLLM Docker images** for **RDNA4** & **CDNA3**
