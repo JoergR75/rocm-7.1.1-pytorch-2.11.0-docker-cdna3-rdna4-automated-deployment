@@ -1,10 +1,10 @@
 #!/bin/bash
 # ================================================================================================================
-# ROCm 7.1.1 + OpenCL 2.x + PyTorch 2.11.0 (nightly for ROCm7.1) + Transformers + Docker Setup
+# ROCm 7.1.1 + OpenCL 2.x + PyTorch 2.11.0 (stable for ROCm7.1) + Transformers + Docker Setup
 # Compatible with Ubuntu 22.04.x and 24.04.x (Desktop & Server) — Ubuntu 20.04.x is no longer supported
 # ================================================================================================================
 # Description:
-# This script automates the installation of AMD ROCm 7.1.1, PyTorch 2.11.0 (nightly for ROCm7.1), Transformers, and Docker
+# This script automates the installation of AMD ROCm 7.1.1, PyTorch 2.11.0 (stable for ROCm7.1), Transformers, and Docker
 # on Ubuntu 22.04.x and 24.04.x systems. It automatically fetches the appropriate installation scripts and performs
 # a fully non-interactive setup optimized for both desktop and server environments.
 # ================================================================================================================
@@ -28,8 +28,8 @@
 # ROCm Release Notes:    https://rocm.docs.amd.com/en/docs-7.1.1/about/release-notes.html
 # ROCm Driver Repo:      https://repo.radeon.com/amdgpu-install/7.1.1/ubuntu/
 #
-# PyTorch:               2.11.0.dev20260129+rocm7.1
-# Transformers:          5.0.0
+# PyTorch:               2.11.0+rocm7.1
+# Transformers:          5.7.0
 # Docker:                29.2.0 Min. 29.0.0 (the script will verify and skip installation if minimum requirements are installed)
 #
 # INCLUDED TOOLS:
@@ -56,7 +56,7 @@ function print () {
 }
 
 clear &&
-print '\n🚀 ROCm 7.1.1 + OpenCL 2.x + PyTorch 2.11.0 (nightly for ROCm7.1) + Transformers + Docker Setup\nCompatible with Ubuntu 22.04.x and 24.04.x (Desktop & Server)\n⚠️ Ubuntu 20.04.x is no longer supported\n'
+print '\n🚀 ROCm 7.1.1 + OpenCL 2.x + PyTorch 2.11.0 (stable for ROCm7.1) + Transformers + Docker Setup\nCompatible with Ubuntu 22.04.x and 24.04.x (Desktop & Server)\n⚠️ Ubuntu 20.04.x is no longer supported\n'
 print '\nUbuntu OS Update ...\n'
 
 sudo apt-get update
@@ -142,7 +142,7 @@ install_jellyfish() {
     echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
 
-    print '\nInstalling Pytorch 2.11.0 (nightly for ROCm7.1), Transformers environment ...\n'
+    print '\nInstalling Pytorch 2.11.0 (stable for ROCm7.1), Transformers environment ...\n'
 
     python3 -m pip install --upgrade pip --quiet --no-input
     python3 -m pip install --upgrade pip wheel --quiet --no-input
@@ -230,7 +230,7 @@ install_noble() {
     echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
 
-    print '\nInstalling Pytorch 2.11.0 (nightly for ROCm7.1), Transformers environment ...\n'
+    print '\nInstalling Pytorch 2.11.0 (stable for ROCm7.1), Transformers environment ...\n'
 
     pip3 install --upgrade pip --break-system-packages
     pip3 install --upgrade pip wheel --break-system-packages
@@ -389,7 +389,7 @@ else
 fi
 
 # Final installation message
-print '\n✅ Finished ROCm 7.1.1 + OCL 2.x + PyTorch 2.11.0 (nightly for ROCm7.1) + Transformers environment installation and setup.\n'
+print '\n✅ Finished ROCm 7.1.1 + OCL 2.x + PyTorch 2.11.0 (stable for ROCm7.1) + Transformers environment installation and setup.\n'
 
 # Post-reboot testing instructions
 printf "\nAfter the reboot, test your installation with:\n"
